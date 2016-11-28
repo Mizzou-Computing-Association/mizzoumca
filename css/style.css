@@ -129,19 +129,6 @@ span {
    background-color: #F7D036;
 }
 
-#front-page-logo{
-   padding: margin 10px;
-}
-#logo-container{
-   padding: 8px;
-}
-.brand-logo{
-   padding: 10px;
-}
-.nav-wrapper{
-   background-color: grey!important;
-}
-
 #loader {
    position: absolute;
    bottom: 5px;
@@ -149,4 +136,7 @@ span {
 
 #login-logo {
    height: 80px;
+}
+#test1{
+   background-color: blue;
 }
