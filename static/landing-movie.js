@@ -8,7 +8,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var tv,
    playerDefaults = { autoplay: 0, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3 };
-var currVid = { 'videoId': '-I65g0K2_Bo', 'startSeconds': 0, 'endSeconds': 150, 'suggestedQuality': 'hd720' };
+var currVid = { 'videoId': '-I65g0K2_Bo', 'startSeconds': 0, 'endSeconds': 100, 'suggestedQuality': 'hd720' };
 // 78-102
 function onYouTubePlayerAPIReady() {
    tv = new YT.Player('tv', { events: { 'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange }, playerVars: playerDefaults });
