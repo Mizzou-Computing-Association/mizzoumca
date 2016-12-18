@@ -7,3 +7,4 @@ Flask-SQLAlchemy==2.1
 Flask-Stormpath==0.4.8
 Flask-WhooshAlchemy==0.56
 Flask-WTF==0.12
+slackclient==1.0.4

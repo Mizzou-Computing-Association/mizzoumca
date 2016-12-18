@@ -1,6 +1,7 @@
 from flask import Flask
 import os
 from flask import Flask, abort, flash, redirect, render_template, request, url_for
+import slack
 
 app = Flask(__name__)
 
@@ -10,7 +11,9 @@ def landing_view():
 
 @app.route('/home')
 def home():
-   return render_template('home.html')
+   messages = slack.notification_history()
+   return render_template('home.html', messages=messages)
+
 
 @app.route('/register')
 def register():
@@ -21,3 +24,4 @@ if __name__ == '__main__':
 
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
+
