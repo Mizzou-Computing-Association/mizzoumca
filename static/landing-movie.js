@@ -54,5 +54,4 @@ $(document).ready(function() {
    if (window.mobilecheck){
       $(".se-preload-con").fadeOut("fast");
    }
-
 });
