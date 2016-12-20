@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block body %}
+
+   {% for channel, messages in updates.iteritems() %}
+     <h1>{{channel}}</h1>
+     {% for message in updates[channel] %}
+     <ul>
+       <li><h5>Update: {{ message['text']|safe }}</h5><p>Posted at: {{message['ts']}}</p></li>
+     {% endfor %}
+     </ul>
+   {% endfor %}
+
+{% endblock %}
