@@ -2,31 +2,40 @@ from __future__ import with_statement
 from slackclient import SlackClient
 import os, time, json, requests
 
-
-# slack_token = 'xoxb-106818627829-iAYNfcKWW6EzGNXkB6K5GL6G'
-
-
 try:
-    with open( "bot-key.txt" ) as f :
-        slack_token=  str(f.readlines()[0])
+   slack_token = os.environ.get('SLACK_TOKEN')
 except EnvironmentError:
     print 'Please obtain a valid bot key.'
 
 slack_client = SlackClient(slack_token)
 
 
+channels = {"general": "C0K2AGL7Q" , "sig-cyber-security": "C0L3ASEBS", "sig-game-dev_vr": "C0KC84SHM", "sig-swift": "C0KMQ3CKV", "sig-web-dev": "C0KMU20RE", "cyber-security-sig" : "C03NTBM49", "algorithm-fight-club": "C0KJGKZ6Y"}
+
 def notification_history():
-   messages = []
-   request_url = 'https://slack.com/api/channels.history?token=' + slack_token + '&channel=C0K2AGL7Q'
-   r = requests.get(request_url)
-   r_json = json.loads(r.text)
+   updates = {}
+   base_url = 'https://slack.com/api/channels.history?token=' + slack_token
 
-   for message in r_json['messages']:
-      if message['text'].split('>')[0][1] == '!' or message['text'].split('>')[0][1] == '@':
-         message['text'] = message['text'].split('>')[1]
-         messages.append(message)
-      else:
-         messages.append(message)
+   for channel, code in channels.iteritems():
 
-   return messages
+      request_url = base_url + '&channel=' + code
+      r = requests.get(request_url)
+      r_json = json.loads(r.text)
+      updates[channel] = get_valid_messages(r_json)
+
+   return updates
+
+# Scope to channel mentions and limit to most recent 4 posts
+def get_valid_messages(raw_messages):
+   post_messages = []
+   for message in raw_messages['messages']:
+
+      if '<!channel>' in message['text']:
+         if len(post_messages) > 4:
+            return post_messages
+         else:
+            message['text'] = message['text'].split('>')[1]
+            post_messages.append(message)
+
+   return post_messages
 

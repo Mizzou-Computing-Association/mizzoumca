@@ -4,19 +4,3 @@ $(document).ready(function() {
    }
 });
 
-$(function() {
-   $('#login-form').bind('click', function(event) {
-      event.preventDefault();
-
-      $.ajax({
-         type: 'POST',
-         url: 'php/login.php',
-         data: $('form').serialize(),
-         success: function(data) {
-            counsole.out(data);
-         }
-      });
-
-   });
-});
-
