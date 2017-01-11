@@ -19,7 +19,8 @@ The previous way to setup and run the server works like it did before. I havent 
 - Download all pip dependencies by running `$ pip install -r requirements.txt`
 - Download all npm dependencies by running `$ npm install`
 - If you want to setup the development environment, you need to be able to transpile the React ES6 into JavaScript. Babel is used for this, run the following:
--- `$ npm install babel babel-core babel-loader babel-preset-es2015`
--- `$ npm install webpack-dev-server`
+  - `$ npm install babel babel-core babel-loader babel-preset-es2015`
+  - `$ npm install webpack-dev-server`
+
 ### Usage
 To run server locally, run `$ npm start` and open port 5000
