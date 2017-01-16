@@ -1,0 +1,18 @@
+{
+  "name": "mizzoumca",
+  "version": "1.0.0",
+  "description": "Download all dependencies by running: pip install -r requirements.txt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot -c -v -d",
+    "compile": "webpack --progress -p -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^1.14.0"
+  }
+}
