@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Base from './Base.jsx';
 import TempLanding from './TempLanding.jsx';
 import Register from './Register.jsx';
 

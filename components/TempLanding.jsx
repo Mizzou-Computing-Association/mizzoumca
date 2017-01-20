@@ -9,11 +9,9 @@ class TempLanding extends React.Component {
       return (
          <div>
 
-        <nav className="light-blue lighten-1" role="navigation">
+        <nav className="nav" role="navigation">
           <div className="nav-wrapper container"><a id="logo-container" href="#" className="brand-logo">Logo</a>
-            <ul className="right hide-on-med-and-down">
-              <li><a href="#">Navbar Link</a></li>
-            </ul>
+
 
             <ul id="nav-mobile" className="side-nav">
               <li><a href="#">Navbar Link</a></li>
@@ -32,7 +30,7 @@ class TempLanding extends React.Component {
               <a
                onClick = {this.props.showRegister}
                id="download-button"
-               className="btn-large waves-effect waves-light orange">Get Started</a>
+               className="btn-large waves-effect waves-light join-us">Join Us</a>
             </div>
             <br/><br/>
 
@@ -77,7 +75,7 @@ class TempLanding extends React.Component {
           </div>
         </div>
 
-        <footer className="page-footer orange">
+        <footer className=" footer">
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
@@ -106,9 +104,9 @@ class TempLanding extends React.Component {
               </div>
             </div>
           </div>
-          <div className="footer-copyright">
+          <div className="footer">
             <div className="container">
-            Made by <a className="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            <a className="black-text" href="http://materializecss.com">Materialize</a>
             </div>
           </div>
         </footer>
