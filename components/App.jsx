@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Base from './Base.jsx';
-import Landing from './Landing.jsx';
+import TempLanding from './TempLanding.jsx';
 import Register from './Register.jsx';
 
 class App extends React.Component {
@@ -35,12 +35,12 @@ class App extends React.Component {
 			show: 'register',
 		})
 	}
-	
+
 	render() {
 		let display;
 		if (this.state.show === 'landing') {
 			display = (
-				<Landing showBase={this.showBase} showRegister={this.showRegister}/>
+				<TempLanding showBase={this.showBase} showRegister={this.showRegister}/>
 			)
 		}
 		else if (this.state.show === 'base') display = <Base />

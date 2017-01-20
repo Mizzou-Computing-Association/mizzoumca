@@ -4,34 +4,35 @@
   <head>
     <meta charset="UTF-8">
     <title>MCA!</title>
-		
+
 		<!-- the links for entire site -->
     <link rel="stylesheet" href="../static/style.css">
 		<link rel="stylesheet" href="../static/app-style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-		<!-- Old version of materialize css was being used. Delete?
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
-		-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-		
-		<!-- the scripts for the entire site -->
-		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src = "../static/script.js"></script> <!-- I think this is useless now but idk what it does -->
-		<!-- Old version of modernizr was being used. Delete?
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-		-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
-    <!-- 
-    	With the old setup, you had to define these links and scripts on multiple HTML files.
-    	With React, they all go here because React only uses one HTML file. Yes, only one!
-    	This helps keep things organized and less messy.
-    	I noticed you had the same links and scripts in multiple places previously.
-    	There were a few situations where you were using old versions because you forgot to update the
-      other lines of code in those files. (A couple of times you were trying to use nonexistant paths)
-    	NO MORE! ERRORS BEGONE!
-    -->
+
+    <!-- CSS  -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+	<!-- the scripts for the entire site -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src = "../static/script.js"></script>
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="static/js/materialize.js"></script>
+  <script src="static/js/init.js"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="https:/cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   </head>
 
   <body>
