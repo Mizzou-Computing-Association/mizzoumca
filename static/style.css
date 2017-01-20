@@ -1,12 +1,7 @@
-/*
-h1 {
-   font-weight: black;
-}
-
-h5 {}*/
 
 body {
    background: #F7D036;
+   font-family: 'Work Sans', sans-serif;
 }
 
 .nav{
@@ -20,24 +15,3 @@ body {
 #download-button{
    background-color: #EA5A44;
 }
-
-
-/*
-#landingtxt {
-   font-weight: black;
-}
-
-.btn-left {
-   background-color: #F25F5C!important;
-   margin: 20px font-family: Roboto;
-}
-
-.btn-right {
-   background-color: transparent!important;
-   margin: 20px;
-   border-style: solid!important;
-   border-width: 1px: border-color: white;
-   font-family: Roboto;
-}
-
-*/
