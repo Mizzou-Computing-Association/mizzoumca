@@ -17,10 +17,6 @@ class Landing extends React.Component {
 
 	render() {
 		return (
-			//everything in the return statement is your landing.html file wrapped in a <div>
-			//I had to rename class to className so the css classes would get recognized,
-			//it's just how React is built.
-			//I also switched the <a>'s to <div>'s, and added an onTouchTap prop
 			<div>
 				<div className="se-preload-con"></div>
 				<div className="overlay"></div>

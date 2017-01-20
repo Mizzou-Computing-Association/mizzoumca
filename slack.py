@@ -2,10 +2,11 @@ from __future__ import with_statement
 from slackclient import SlackClient
 import os, time, json, requests
 
-try:
-   slack_token = os.environ.get('SLACK_TOKEN')
-except EnvironmentError:
-    print 'Please obtain a valid bot key.'
+
+slack_token = os.environ.get('SLACK_TOKEN')
+if slack_token == None:
+   print 'Please obtain a valid bot key.'
+   exit()
 
 slack_client = SlackClient(slack_token)
 
@@ -38,4 +39,3 @@ def get_valid_messages(raw_messages):
             post_messages.append(message)
 
    return post_messages
-

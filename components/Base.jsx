@@ -70,7 +70,7 @@ class Base extends React.Component {
 					</div>
 					<div className="footer-copyright">
 						<div className="container">
-							© 2016 Mizzou Computing Association
+							© 2017 Mizzou Computing Association
 						</div>
 					</div>
 				</footer>
