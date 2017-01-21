@@ -8,113 +8,103 @@ class TempLanding extends React.Component {
    render() {
       return (
          <div>
+           <nav className="nav navbar-fixed blue-grey darken-4" role="navigation">
+             <div className="nav-wrapper container "><a id="logo-container" href="#" className="brand-logo center">MCA</a>
+             </div>
+           </nav>
+         <div className="section no-pad-bot" id="index-banner">
+            <div className="container  blue-grey-text text-darken-4">
+               <br/><br/>
+               <h1 className="header center welcome">Welcome</h1>
+               <p className="center "><i>to the</i></p>
+               <h1 className="header center welcome">Mizzou Computing Association</h1>
 
-        <nav className="nav" role="navigation">
-          <div className="nav-wrapper container"><a id="logo-container" href="#" className="brand-logo">Logo</a>
-
-
-            <ul id="nav-mobile" className="side-nav">
-              <li><a href="#">Navbar Link</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" className="button-collapse"><i className="material-icons">menu</i></a>
-          </div>
-        </nav>
-        <div className="section no-pad-bot" id="index-banner">
-          <div className="container">
-            <br/><br/>
-            <h1 className="header center orange-text">Starter Template</h1>
-            <div className="row center">
-              <h5 className="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+               <div className="row center">
+                 <h5 className="header col s12 ">The University of Missouri's premier technology organization</h5>
+               </div>
+               <div className="row center">
+                 <img className="logo-img fadeInRight" src = "../static/images/mcalogo-notext.png"></img>
+               </div>
+               <div className="row center">
+                  <a
+                  onClick = {this.props.showRegister}
+                  id="register-button"
+                  className="btn-large waves-effect waves-light join-us z-depth-2">Join Us
+                  </a>
+               </div>
+               <br/><br/>
             </div>
-            <div className="row center">
-              <a
-               onClick = {this.props.showRegister}
-               id="download-button"
-               className="btn-large waves-effect waves-light join-us">Join Us</a>
-            </div>
-            <br/><br/>
+         </div>
+           <div className="container " >
+             <div className="section" id = "club-info">
 
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="section">
-
-            <div className="row">
-              <div className="col s12 m4">
-                <div className="icon-block">
-                  <h2 className="center light-blue-text"><i className="material-icons">flash_on</i></h2>
-                  <h5 className="center">Speeds up development</h5>
-
-                  <p className="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-                </div>
-              </div>
-
-              <div className="col s12 m4">
-                <div className="icon-block">
-                  <h2 className="center light-blue-text"><i className="material-icons">group</i></h2>
-                  <h5 className="center">User Experience Focused</h5>
-
-                  <p className="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-                </div>
-              </div>
-
-              <div className="col s12 m4">
-                <div className="icon-block">
-                  <h2 className="center light-blue-text"><i className="material-icons">settings</i></h2>
-                  <h5 className="center">Easy to work with</h5>
-
-                  <p className="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br/><br/>
-
-          <div className="section">
-          </div>
-        </div>
-
-        <footer className=" footer">
-          <div className="container">
-            <div className="row">
-              <div className="col l6 s12">
-                <h5 className="white-text">Company Bio</h5>
-                <p className="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-              </div>
-              <div className="col l3 s12">
-                <h5 className="white-text">Settings</h5>
-                <ul>
-                  <li><a className="white-text" href="#!">Link 1</a></li>
-                  <li><a className="white-text" href="#!">Link 2</a></li>
-                  <li><a className="white-text" href="#!">Link 3</a></li>
-                  <li><a className="white-text" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-              <div className="col l3 s12">
-                <h5 className="white-text">Connect</h5>
-                <ul>
-                  <li><a className="white-text" href="#!">Link 1</a></li>
-                  <li><a className="white-text" href="#!">Link 2</a></li>
-                  <li><a className="white-text" href="#!">Link 3</a></li>
-                  <li><a className="white-text" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="footer">
-            <div className="container">
-            <a className="black-text" href="http://materializecss.com">Materialize</a>
-            </div>
-          </div>
-        </footer>
-
+               <div className="row">
+                 <div className="col s12 m6">
+                     <div className="card blue-grey darken-4 z-depth-1 center">
+                        <div className="card-content ">
+                           <span className="card-title">Our First 2017 Meeting</span>
+                           <div className="divider"></div>
+                           <p className="info center">Join us for our first meeting of the semester <br/>Thursday, Janurary 26th from 6-8pm <br/>Naka Hall (EBW) 102 <br/><br/>There will be free pizza!</p>
+                        </div>
+                     </div>
+                 </div>
+                 <div className="col s12 m6">
+                     <div className="card blue-grey darken-4 z-depth-1 center">
+                        <div className="card-content ">
+                           <span className="card-title">Special Interest Groups</span>
+                           <div className="divider"></div>
+                           <p className="info center">Special Interest Groups being offered this year<br/>
+                              -Algorithm Fight Club<br/>
+                              -iOS Development<br/>
+                              -Game Dev & VR<br/>
+                              -Volunteering<br/>
+                              -Android<br/>
+                              -Web Dev
+                              </p>
+                        </div>
+                     </div>
+                 </div>
+               </div>
+               <div className="row">
+                 <div className="col s12 m6">
+                     <div className="card blue-grey darken-4 z-depth-1 center">
+                        <div className="card-content ">
+                           <span className="card-title">Contact</span>
+                           <div className="divider"></div>
+                           <p className="info center">Questions? Thoughts? Reach out to us via email: <br/> mizzoumca@gmail.com</p>
+                        </div>
+                     </div>
+                 </div>
+                 <div className="col s12 m6">
+                     <div className="card blue-grey darken-4 z-depth-1 center">
+                        <div className="card-content">
+                           <span className="card-title">Membership</span>
+                           <div className="divider"></div>
+                           <p className="info center">To become a new member (or renew) fill out the quick form by clicking join above<br/><br/> To recieve funding for trips or run for officer positions, attend three meetings per semester</p>
+                        </div>
+                     </div>
+                 </div>
+               </div>
+               <div className="row">
+                  <div className="col s12 center">
+                     <iframe className = "calendar" src="https://calendar.google.com/calendar/embed?src=hqu555vd8tugn2nnb7msi67rgs%40group.calendar.google.com&ctz=America/Chicago" ></iframe>
+                  </div>
+               </div>
+             </div>
+             <br/><br/>
+             <div className="section">
+             </div>
+           </div>
          </div>
       );
    }
 }
 
 export default TempLanding;
+
+
+
+
+
+
 
