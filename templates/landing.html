@@ -1,34 +1,134 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
+  <head>
+    <meta charset="UTF-8">
+    <title>MCA</title>
 
-   <meta charset="utf-8">
-   <title>MCA</title>
-   <link rel="stylesheet" href="../static/style.css">
-   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+      <!-- the links for entire site -->
+    <link rel="stylesheet" href="../static/style.css">
+      <link rel="stylesheet" href="../static/app-style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+
+
+    <!-- CSS  -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+   <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-   <script src="../static/landing-movie.js"></script>
-</head>
 
-<body>
-   <div class="se-preload-con"></div>
-   <div class="overlay"></div>
-   <div class="cover">
-      <div class="hi">
-         <h1 id="landingtxt">Welcome</h1>
-         <p>to the</p>
-         <h1>Mizzou Computing Association</h1>
-         <br>
-         <span id="btn-transparent"><a class="waves-effect waves-light btn-large btn-left" href="{{ url_for('home') }}">See What's New</a></span>
-         <a class="waves-effect waves-light btn-large btn-right modal-trigger" href="{{ url_for('register') }}">Join Us</a>
+   <!-- the scripts for the entire site -->
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src = "../static/script.js"></script>
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="static/js/materialize.js"></script>
+  <script src="static/js/init.js"></script>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+   <script src="https:/cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  </head>
+
+  <body>
+<div>
+     <nav class="nav navbar-fixed blue-grey darken-4" role="navigation">
+       <div class="nav-wrapper container "><a id="logo-container" href="#" class="brand-logo center">MCA</a>
+       </div>
+     </nav>
+   <div class="section no-pad-bot" id="index-banner">
+      <div class="container  blue-grey-text text-darken-4">
+         <br><br>
+         <h1 class="header center welcome">Welcome</h1>
+         <p class="center "><i>to the</i></p>
+         <h1 class="header center welcome">Mizzou Computing Association</h1>
+
+         <div class="row center">
+           <h5 class="header col s12 ">The University of Missouri's premier technology organization</h5>
+         </div>
+         <div class="row center">
+           <img class="logo-img fadeInRight" src = "../static/images/mcalogo-notext.png"></img>
+         </div>
+         <div class="row center">
+            <a
+            onClick = {temppate}
+            id="register-button"
+            class="btn-large waves-effect waves-light join-us z-depth-2">Join Us
+            </a>
+         </div>
+         <br><br>
       </div>
    </div>
-   <div class="tv">
-      <div class="screen mute" id="tv"></div>
+     <div class="container " >
+       <div class="section" id = "club-info">
+
+         <div class="row">
+           <div class="col s12 m6">
+               <div class="card blue-grey darken-4 z-depth-1 center">
+                  <div class="card-content ">
+                     <span class="card-title">Our First 2017 Meeting</span>
+                     <div class="divider"></div>
+                     <p class="info center">Join us for our first meeting of the semester <br>Thursday, Janurary 26th from 6-8pm <br>Naka Hall (EBW) 102 <br><br>There will be free pizza!</p>
+                  </div>
+               </div>
+           </div>
+           <div class="col s12 m6">
+               <div class="card blue-grey darken-4 z-depth-1 center">
+                  <div class="card-content ">
+                     <span class="card-title">Special Interest Groups</span>
+                     <div class="divider"></div>
+                     <p class="info center">Special Interest Groups being offered this year<br>
+                        -Algorithm Fight Club<br>
+                        -iOS Development<br>
+                        -Game Dev & VR<br>
+                        -Volunteering<br>
+                        -Android<br>
+                        -Web Dev
+                        </p>
+                  </div>
+               </div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col s12 m6">
+               <div class="card blue-grey darken-4 z-depth-1 center">
+                  <div class="card-content ">
+                     <span class="card-title">Contact</span>
+                     <div class="divider"></div>
+                     <p class="info center">Questions? Thoughts? Reach out to us via email: <br> mizzoumca@gmail.com</p>
+                  </div>
+               </div>
+           </div>
+           <div class="col s12 m6">
+               <div class="card blue-grey darken-4 z-depth-1 center">
+                  <div class="card-content">
+                     <span class="card-title">Membership</span>
+                     <div class="divider"></div>
+                     <p class="info center">To become a new member (or renew) fill out the quick form by clicking join above<br><br> To recieve funding for trips or run for officer positions, attend three meetings per semester</p>
+                  </div>
+               </div>
+           </div>
+         </div>
+         <div class="row">
+            <div class="col s12 center">
+               <iframe class = "calendar" src="https://calendar.google.com/calendar/embed?src=hqu555vd8tugn2nnb7msi67rgs%40group.calendar.google.com&ctz=America/Chicago" ></iframe>
+            </div>
+         </div>
+       </div>
+       <br><br>
+       <div class="section">
+       </div>
+     </div>
    </div>
-</body>
+  </body>
+
 </html>
 
