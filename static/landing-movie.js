@@ -44,10 +44,3 @@ function vidRescale() {
 $(window).on('load resize', function() {
    vidRescale();
 });
-
-$(document).ready(function() {
-  if (screen.width <= 800) {
-    window.location = "/register";
-    alert('true');
-  }
-});
