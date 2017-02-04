@@ -1,34 +1,34 @@
-from flask import Flask
 import os
-from flask import Flask, abort, flash, redirect, render_template, request, url_for
+from flask import Flask, Blueprint, abort, flash, redirect, render_template, request, url_for
 import slack
 
-app = Flask(__name__)
+bp = Blueprint('bp', __name__, template_folder='./')
 updates = slack.notification_history()
 
-@app.route('/')
+@bp.route('/')
 def landing_view():
-   return render_template('landing.html')
+   return render_template('index.html')
 
-@app.route('/home')
+@bp.route('/home')
 def home():
    return render_template('home.html', updates=updates)
 
-@app.route('/sigs')
+@bp.route('/sigs')
 def sigs():
    r = dict(updates)
    del r['general']
    return render_template('sigs.html', updates=r)
 
-@app.route('/register')
+@bp.route('/register')
 def register():
    return render_template('register.html')
 
-@app.route('/contact')
+@bp.route('/contact')
 def contact():
    return render_template('contact.html')
 
-
+app = Flask(__name__)
+app.register_blueprint(bp)
 if __name__ == '__main__':
 
     port = int(os.environ.get('PORT', 5000))
