@@ -20,3 +20,12 @@
    font-weight:400;
    margin: 10px;
 }
+
+.nom-btn{
+   background-color: #FE4A49;
+   color: #F9FFFB!important;
+   font-family: 'Open Sans', sans-serif;
+   font-weight:400;
+   margin: 10px;
+   font-size: 14px;
+}

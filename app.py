@@ -15,6 +15,10 @@ def landing_view():
 def register():
    return render_template('register.html')
 
+@app.route('/members')
+def nominate():
+   return render_template('members.html')
+
 
 if __name__ == '__main__':
 
