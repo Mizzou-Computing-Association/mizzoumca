@@ -5,16 +5,16 @@ h1 {
 
 h5 {}
 
-html {
+/*html {
    display: table;
    margin: auto;
-}
+}*/
 
-body {
+/*body {
    display: table-cell;
    vertical-align: middle;
    background: #F7D036;
-}
+}*/
 
 a {
    color: #ff0;

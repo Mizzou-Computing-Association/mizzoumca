@@ -14,38 +14,26 @@ class Base extends React.Component {
 	render() {
 		return (
 			<div>
-				<nav className="nav-extended">
-					<div className="nav-wrapper center-align #263238 blue-grey darken-4">
-						<a className="brand-logo" id="logo-container">
-							<object
-								id="front-page-logo"
-								width="170px"
-								type="image/png"
-								data="../static/images/mcalogo-notext.png"
-							>Your browser does not support SVG.</object>
-						</a>
-						<a data-activates="mobile-demo" className="button-collapse">
-							<i className="material-icons">menu</i>
-						</a>
+            <nav>
+               <div className="nav-wrapper">
+                  <a href="#!" className="brand-logo">Logo</a>
+                  <a href="#" data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></a>
+                  <ul className="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Test</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                  </ul>
+                  <ul className="side-nav" id="mobile-demo">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                  </ul>
+                </div>
+            </nav>
 
-						<ul id="nav-mobile" className="right hide-on-med-and-down">
-							<li><a onClick={this.showLogin}>Login</a></li>
-						</ul>
-						<ul className="side-nav" id="mobile-demo">
-							<li><a onClick={this.showLogin}>Login</a></li>
-						</ul>
 
-						<ul className="tabs tabs-transparent">
-							<li className="tab"><a href="{{ url_for('home') }}" id="home">Home</a></li>
-							<li className="tab"><a href="{{ url_for('sigs') }}" id="sigs">SIG</a></li>
-							<li className="tab"><a href="{{ url_for('register') }}">Register</a></li>
-							<li className="tab"><a href="{{ url_for('contact') }}">Contact</a></li>
-							<li className="tab disabled"><a href="#test3">Members</a></li>
-						</ul>
-					</div>
-				</nav>
-
-				Stuff
 
 				<footer className="page-footer #263238 blue-grey darken-4 ">
 					<div className="container ">

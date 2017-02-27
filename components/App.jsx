@@ -35,7 +35,7 @@ class App extends React.Component {
 			show: 'register',
 		})
 	}
-	
+
 	render() {
 		let display;
 		if (this.state.show === 'landing') {
