@@ -11,7 +11,7 @@ def landing_view():
 
 @bp.route('/home')
 def home():
-   return render_template('home.html', updates=updates)
+   return render_template('base-demo.html', updates=updates)
 
 @bp.route('/sigs')
 def sigs():

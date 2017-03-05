@@ -35,7 +35,7 @@ class Base extends React.Component {
 
 
 
-				<footer className="page-footer #263238 blue-grey darken-4 ">
+				<footer className="page-footer #263444 black darken-4 ">
 					<div className="container ">
 						<div className="row">
 							<div className="col s6">
@@ -43,7 +43,7 @@ class Base extends React.Component {
 							</div>
 							<div className="col s6">
 								<p className="grey-text text-lighten-4">
-									Find other ways to get involved through the <br/>
+									See other ways to get involved through the <br/>
 									IEEE and MU Department of Engineering.
 								</p>
 								<h5 className="white-text">Resources</h5>
