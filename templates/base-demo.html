@@ -7,10 +7,11 @@
 
       <!-- the links for entire site -->
     <link rel="stylesheet" href="./static/style.css">
-      <link rel="stylesheet" href="./static/app-style.css">
+      <link rel="stylesheet" href="static/app-style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
       <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -20,8 +21,73 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
   </head>
   <body>
+  <nav>
+    <div class="nav-wrapper" id = "cssnav">
+      <a href="#!" class="brand-logo center hide-on-large-only">MCA</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i id = "menu" class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="#">Home</a></li>
+        <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="#">SIGs</a></li>
+        <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="#">Members</a></li>
+        <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="#">Resources</a></li>
+      </ul>
+      <ul class ="right hide-on-med-and-down r-panel">
+         <li><a class="social-icon" href="https://twitter.com/mizzoumca" target="_"><img class = "social-img" src="static/images/Twitter.svg"></a></li>
+         <li><a class="social-icon" href="https://www.facebook.com/mizzouhackers/" target="_"><img class = "social-img" src="static/images/facebook.svg"></a></li>
+         <li><a class="social-icon" href="https://www.instagram.com/mizzoumca/" target="_"><img class = "social-img" src="static/images/instagram.svg" ></a></li>
+         <!-- <li><a class="nav-logo"><img class = "img-logo" src="static/images/mcalogo-notext.png"></a></li> -->
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">SIGs</a></li>
+        <li><a href="#">Members</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+  </nav>
 
 
-  </body>
-
+   <footer class="page-footer">
+         <div class="row">
+         <div class="col s5 offset-s1 footer-col">
+              <div class="row">
+              <p class = "content">Sign up for our mailing list to stay up to date on events and news:</p>
+                  <form class="col s12" method="GET">
+                     <div class="row email-input z-depth-1">
+                        <div class=" input-field col s12">
+                           <input id="email" type="email" class="validate">
+                           <label for="email" data-error="wrong" data-success="right">Email</label>
+                           <div class = "right-align">
+                           <button class="btn  red waves-effect waves-yellow" type="submit" name="action">Submit
+                              <i class="material-icons right">send</i>
+                           </button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+         </div>
+         <div class="col s5 offset-s1">
+             <p class="grey-text text-lighten-4">Find other ways to get involved with Computer Science at MU</p>
+             <h5 class="white-text">Resources</h5>
+             <ul>
+               <li><a class="grey-text text-lighten-3" href="http://hackmizzou.com/" target="_">Hack Mizzou</a></li>
+               <li><a class="grey-text text-lighten-3" href="http://engineering.missouri.edu/cs/" target="_">MU Department of Computer Science</a></li>
+               <li><a class="grey-text text-lighten-3" href="http://engineering.missouri.edu/" target="_">MU Engineering</a></li>
+             </ul>
+            <ul id ="footersm">
+               <li><a class="social-icon" href="https://twitter.com/mizzoumca" target="_"><img class = "social-img" src="static/images/Twitter.svg"></a></li>
+               <li><a class="social-icon" href="https://www.facebook.com/mizzouhackers/" target="_"><img class = "social-img" src="static/images/facebook.svg"></a></li>
+               <li><a class="social-icon" href="https://www.instagram.com/mizzoumca/" target="_"><img class = "social-img" src="static/images/instagram.svg" ></a></li>
+            </ul>
+           </div>
+         </div>
+       <div class="footer-copyright">
+         <div class="container">
+         © 2017 Mizzou Computing Association
+         </div>
+       </div>
+   </footer>
 </html>
+
+
