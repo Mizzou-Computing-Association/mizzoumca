@@ -18,6 +18,7 @@ class App extends React.Component {
 	}
 
 	showBase() {
+      console.log('base shouw');
 		this.setState({
 			show: 'base',
 		})

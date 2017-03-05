@@ -1,14 +1,69 @@
-/*body {
- display: flex;
- min-height: 100vh;
- flex-direction: column;
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
+body {
+   background: #FFE677;
+   font-family: 'Libre Franklin', sans-serif;
+   color: #F7F6EA!important;
 }
 
-main {
- flex: 1 0 auto;
-}*/
+.nav-logo{
+   height: 55px!important;
+   margin-left: 20px;
+   margin-bottom: 10px!important;
+}
+.img-logo{
+   height: 55px!important;
+   padding: 5px;
+   margin: auto: !important;
+}
 
-.logo-wrapper{
-   padding-top: 50px
-   height: 50px;
+.r-panel{
+   height: 55px;
+}
+
+.nav-bttn {
+   margin-left: 5px!important;
+   margin-right: 5px!important;
+   margin-top: 2px!important;
+   margin-bottom: 2px!important;
+   border-radius: 5px!important;
+   color: #F7F6EA!important;
+   font-weight: 100!important;
+}
+.social-icon{
+   height: 0px;
+   width: 40px;
+   margin-left: 4px;
+   margin-right: 4px;
+   margin-top: 9px;
+}
+.social-img{
+   height: 30px;
+   width: 30px;
+   margin: auto;
+}
+#nav-right{
+   margin-right: 20px;
+}
+nav, #menu{
+   height: 55px!important;
+   line-height: 55px!important;
+   background-color: #475B63!important;
+}
+.content{
+   font-size: 18px;
+}
+
+.email-input{
+   background-color: #F7F6EA;
+   padding: 5px;
+   border-radius: 10px;
+}
+
+ul#footersm li{
+   display: inline;
+}
+
+footer.page-footer{
+   background-color: #475B63!important;
+   font-family: 'Libre Franklin', sans-serif;
 }
