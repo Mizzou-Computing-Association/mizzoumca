@@ -32,10 +32,16 @@ def get_valid_messages(raw_messages):
    for message in raw_messages['messages']:
 
       if '<!channel>' in message['text']:
+         message["ts_day"] = time.strftime("%a %B %d, %Y", time.localtime(float(message['ts']))).replace(" 0", " ")
+         message["ts_time"] = time.strftime("%I:%M %p", time.localtime(float(message['ts']))).replace(" 0", " ")
+
+
          if len(post_messages) > 4:
             return post_messages
          else:
             message['text'] = message['text'].split('>')[1]
+            if message['text'][0] == ":":
+               message['text'] = message['text'][1:]
             post_messages.append(message)
 
    return post_messages

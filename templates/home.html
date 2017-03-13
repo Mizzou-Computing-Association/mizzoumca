@@ -1,8 +1,33 @@
-{% extends "base.html" %}
+{% extends "base-demo.html" %}
 {% block body %}
-  <ul>
-  {% for message in updates['general'] %}
-    <li><h5>Update: {{ message['text']|safe }}</h5><p>Posted at: {{message['ts']}}</p></li>
-  {% endfor %}
-  </ul>
+
+<!-- <div class="col s12 m12 parallax-container"> -->
+   <!-- <div ><img class="paralax responsive-img" src="../static/images/group-photo.png"></div> -->
+   <div class = "center-align display-main">
+      <img class="responsive-img main-img" width="1000" src="../static/images/group-photo.png">
+   </div>
+<!-- </div> -->
+ <div class="row feeds">
+   <div class="col s12 m6 ">
+
+
+   </div>
+   <div class="col s12 m6 ">
+         <h4>Announcments</h4>
+         <ul class="collection">
+         {% for message in updates['general'] %}
+          <li class="collection-item">
+            <div><p class = "feed-content">{{ message['text']|safe }}</p></div>
+            <div>
+               <div class = "timestamp">
+                  {{message['ts_day']}}<br>
+                  {{message['ts_time']}}
+            </div>
+            </div>
+          </li>
+          {% endfor %}
+      </ul>
+   </div>
+</div>
+
 {% endblock %}
