@@ -4,5 +4,14 @@ $(document).ready(function() {
    }
    $('.parallax').parallax();
    $(".button-collapse").sideNav();
+
+   var options = [
+    {selector: '.card', offset: 20, callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      }}
+   ];
+   console.log('options');
+   Materialize.scrollFire(options);
+
 });
 

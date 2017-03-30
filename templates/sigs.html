@@ -2,12 +2,29 @@
 {% block body %}
 
    {% for channel, messages in updates.iteritems() %}
-     <h1>{{channel}}</h1>
-     {% for message in updates[channel] %}
-     <ul>
-       <li><h5>Update: {{ message['text']|safe }}</h5><p>Posted at: {{message['ts']}}</p></li>
-     {% endfor %}
-     </ul>
+      <div class="container">
+      <div class = "row">
+         <h4 id = "header1" class = "header center z-depth-1">{{channel}}</h4>
+         <div class = "col s12 m6"></div>
+         <div class = "col s12 m6 ">
+            <ul class="collection deep-orange lighten-4">
+            {% for message in updates[channel] %}
+             <a href="#!" class = "collection-item">
+               <div><p class = "feed-content">{{ message['text']|safe }}</p></div>
+               <div>
+                  <div class = "row">
+                     <div class = "timestamp col s4 offset-s8">
+                        {{message['ts_day']}}<br>
+                        {{message['ts_time']}}
+                     </div>
+                  </div>
+               </div>
+             </a>
+             {% endfor %}
+            </ul>
+         </div>
+      </div>
+      </div>
    {% endfor %}
 
 {% endblock %}

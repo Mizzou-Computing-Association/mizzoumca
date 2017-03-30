@@ -9,9 +9,7 @@ if slack_token == None:
    exit()
 
 slack_client = SlackClient(slack_token)
-
-
-channels = {"general": "C0K2AGL7Q" , "sig-cyber-security": "C0L3ASEBS", "sig-game-dev_vr": "C0KC84SHM", "sig-swift": "C0KMQ3CKV", "sig-web-dev": "C0KMU20RE", "cyber-security-sig" : "C03NTBM49", "algorithm-fight-club": "C0KJGKZ6Y"}
+channels = {"general": "C0K2AGL7Q" ,  "sig-game-dev_vr": "C0KC84SHM", "sig-swift": "C0KMQ3CKV", "sig-web-dev": "C0KMU20RE", "cyber-security-sig" : "C03NTBM49", "algorithm-fight-club": "C0KJGKZ6Y"}
 
 def notification_history():
    updates = {}
