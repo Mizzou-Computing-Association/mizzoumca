@@ -1,4 +1,4 @@
-{% extends "base-demo.html" %}
+{% extends "base.html" %}
 {% block body %}
 
 <!-- <div class="col s12 m12 parallax-container"> -->
@@ -8,25 +8,74 @@
    </div>
 <!-- </div> -->
  <div class="row feeds">
-   <div class="col s12 m6 ">
+   <div class="col s12 m6">
+      <div class>
+         <h4 id = "header2" class ="header center z-depth-1"> Club Info</h4>
+      </div>
 
+         <div class="card cyan lighten-5 z-depth-1 center">
+            <div class="card-content">
+               <span class="card-title">Membership</span>
+               <div class="divider"></div>
+               <p class="info center">To become a new member (or renew) fill out the quick form by clicking members above<br><br> To recieve funding for trips or run for officer positions, attend three meetings per semester</p>
+            </div>
+         </div>
+         <div class="card cyan lighten-5 z-depth-1 center">
+            <div class="card-content ">
+               <span class="card-title">Nominate a Member</span>
+               <div class="divider"></div>
+               <p class="info center">Think someone is doing interesting things and should get recognition? <br><br></p>
+               <a target = "_" class="waves-effect waves-light btn nom-btn" href="members">Nominate a Member</a>
+            </div>
+         </div>
+
+         <div class="card cyan lighten-5 z-depth-1 center">
+            <div class="card-content ">
+               <span class="card-title">Special Interest Groups</span>
+               <div class="divider"></div>
+               <p class="info center">Special Interest Groups being offered this year<br>
+               More info about sigs available on the SIGs tab! <br>
+                  -Algorithm Fight Club<br>
+                  -iOS Development<br>
+                  -Game Dev & VR<br>
+                  -Volunteering<br>
+                  -Web Dev
+                  </p>
+            </div>
+         </div>
+
+         <div class="card cyan lighten-5 z-depth-1 center">
+            <div class="card-content ">
+               <span class="card-title">Contact</span>
+               <div class="divider"></div>
+               <p class="info center">Questions? Thoughts? Reach out to us via email: <br> mizzoumca@gmail.com</p>
+            </div>
+         </div>
 
    </div>
    <div class="col s12 m6 ">
-         <h4>Announcments</h4>
-         <ul class="collection">
+         <h4 id = "header1" class = "header center z-depth-1">Announcments</h4>
+         <ul class="collection deep-orange lighten-4">
          {% for message in updates['general'] %}
-          <li class="collection-item">
+          <a href="#!" class = "collection-item">
             <div><p class = "feed-content">{{ message['text']|safe }}</p></div>
             <div>
-               <div class = "timestamp">
-                  {{message['ts_day']}}<br>
-                  {{message['ts_time']}}
+               <div class = "row">
+                  <div class = "timestamp col s4 offset-s8">
+                     {{message['ts_day']}}<br>
+                     {{message['ts_time']}}
+                  </div>
+               </div>
             </div>
-            </div>
-          </li>
+          </a>
           {% endfor %}
       </ul>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col s12 m12 center">
+      <iframe class = "calendar" src="https://calendar.google.com/calendar/embed?src=hqu555vd8tugn2nnb7msi67rgs%40group.calendar.google.com&ctz=America/Chicago" ></iframe>
    </div>
 </div>
 

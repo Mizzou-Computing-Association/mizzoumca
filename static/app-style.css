@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
+@import url('https://fonts.googleapis.com/css?family=Monoton|Raleway');
 body {
    background: #FFE677;
-   font-family: 'Libre Franklin', sans-serif;
+   font-family: 'Raileway', sans-serif;
    color: #F7F6EA!important;
+}
+
+*{
+   font-family: 'Raileway', sans-serif;
+}
+
+.header{
+   overflow: auto;
+   color: #212227;
+   padding: 15px;
+   border-radius: 15px;
+   font-family: 'Monoton', cursive;
+}
+#header1{
+   background-color: #ffccbc;
+}
+#header2{
+   background-color: #b2ebf2;
 }
 
 .nav-logo{
@@ -20,6 +39,35 @@ body {
    height: 55px;
 }
 
+.card{
+   color: #F9FFFB!important;
+   background-color: #475B63!important;
+}
+
+#club-info{
+   margin-top: 120px;
+}
+
+.info{
+   margin-top: 10px!important;
+   font-size: 20px;
+   font-weight: 200;
+   color: #212121!important;
+}
+
+.card-title{
+   letter-spacing: 1.5px;
+   color: #212121!important;
+}
+
+.calendar{
+   width: 93%;
+   height: 400px;
+   border-style: solid;
+   border-color: #2D2D34;
+   border-radius: 4px;
+}
+
 .nav-bttn {
    margin-left: 5px!important;
    margin-right: 5px!important;
@@ -28,6 +76,7 @@ body {
    border-radius: 5px!important;
    color: #F7F6EA!important;
    font-weight: 100!important;
+   font-family: 'Libre Franklin', sans-serif!important;
 }
 .social-icon{
    height: 0px;
@@ -48,6 +97,7 @@ nav, #menu{
    height: 55px!important;
    line-height: 55px!important;
    background-color: #475B63!important;
+   font-family: 'Libre Franklin', sans-serif;
 }
 .content{
    font-size: 20px;
@@ -65,6 +115,7 @@ nav, #menu{
    margin-top: 30px;
    border: 1px solid #475B63!important;
    border-radius: 2px!important;
+   color: #ffccbc!important;
 }
 
 .feeds{
@@ -73,13 +124,15 @@ nav, #menu{
 
 
 .feed-content{
-   color: #303633;
+   color: #212121 ;
 }
 
 .timestamp{
    color: #303633;
-   text-align: right;
-
+   text-align: center;
+   background-color: #fbe9e7 ;
+   border-radius: 10px;
+   border: solid white 1px;
 }
 
 .email-input{

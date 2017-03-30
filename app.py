@@ -4,7 +4,7 @@ import slack
 
 
 app = Flask(__name__)
-
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 updates = slack.notification_history()
 
 @app.route('/')
