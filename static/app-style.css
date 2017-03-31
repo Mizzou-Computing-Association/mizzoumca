@@ -55,6 +55,14 @@ body {
    color: #212121!important;
 }
 
+.exec-content{
+   font-size: 20px;
+   font-weight: 500;
+   color: #212121!important;
+   text-align: center;
+   border-style: solid black 1 px;
+}
+
 .card-title{
    letter-spacing: 1.5px;
    color: #212121!important;

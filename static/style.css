@@ -3,18 +3,12 @@ h1 {
    font-weight: black;
 }
 
-h5 {}
+body {
+   background: #FFE677;
+   font-family: 'Raileway', sans-serif;
+   color: #F7F6EA!important;
+}
 
-/*html {
-   display: table;
-   margin: auto;
-}*/
-
-/*body {
-   display: table-cell;
-   vertical-align: middle;
-   background: #F7D036;
-}*/
 
 a {
    color: #ff0;
@@ -125,8 +119,8 @@ span {
    width: 100%;
    height: 100%;
    z-index: 9999;
-   background: url(images/Preloader_5.gif) center no-repeat #fff;
-   background-color: #F7D036;
+   background: url(images/preloader.gif) center no-repeat #fff;
+   background-color: #FFE677;
 }
 
 #loader {

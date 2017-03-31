@@ -1,18 +1,14 @@
 {% extends "base.html" %}
 {% block body %}
 
-<!-- <div class="col s12 m12 parallax-container"> -->
-   <!-- <div ><img class="paralax responsive-img" src="../static/images/group-photo.png"></div> -->
-   <div class = "center-align display-main">
-      <img class="responsive-img main-img" width="1000" src="../static/images/group-photo.png">
-   </div>
-<!-- </div> -->
+<div class = "center-align display-main">
+   <img class="responsive-img main-img" width="1000" src="../static/images/group-photo.png">
+</div>
  <div class="row feeds">
    <div class="col s12 m6">
       <div class>
          <h4 id = "header2" class ="header center z-depth-1"> Club Info</h4>
       </div>
-
          <div class="card cyan lighten-5 z-depth-1 center">
             <div class="card-content">
                <span class="card-title">Membership</span>
@@ -28,7 +24,6 @@
                <a target = "_" class="waves-effect waves-light btn nom-btn" href="members">Nominate a Member</a>
             </div>
          </div>
-
          <div class="card cyan lighten-5 z-depth-1 center">
             <div class="card-content ">
                <span class="card-title">Special Interest Groups</span>
@@ -43,7 +38,6 @@
                   </p>
             </div>
          </div>
-
          <div class="card cyan lighten-5 z-depth-1 center">
             <div class="card-content ">
                <span class="card-title">Contact</span>
@@ -51,10 +45,9 @@
                <p class="info center">Questions? Thoughts? Reach out to us via email: <br> mizzoumca@gmail.com</p>
             </div>
          </div>
-
    </div>
    <div class="col s12 m6 ">
-         <h4 id = "header1" class = "header center z-depth-1">Announcments</h4>
+      <h4 id = "header1" class = "header center z-depth-1">Announcments</h4>
          <ul class="collection deep-orange lighten-4">
          {% for message in updates['general'] %}
           <a href="#!" class = "collection-item">
@@ -72,11 +65,59 @@
       </ul>
    </div>
 </div>
-
-<div class="row">
+<div class="row center-align">
+   <div class = "col s12 m4 offset-m4 center-align">
+      <h4 class ="header center z-depth-1">Schedule</h4>
+   </div>
    <div class="col s12 m12 center">
       <iframe class = "calendar" src="https://calendar.google.com/calendar/embed?src=hqu555vd8tugn2nnb7msi67rgs%40group.calendar.google.com&ctz=America/Chicago" ></iframe>
    </div>
 </div>
-
+<div class = "section">
+   <div class="row center-align">
+      <div class = "col s12 m4 offset-m4 center-align">
+         <h4 class ="header center z-depth-1">2017 Officers</h4>
+      </div>
+   </div>
+   <div class="row center-align">
+      <div class="col s6 m4 center">
+         <img src="../static/images/alain.png">
+         <h5 class = "exec-content">Alain Chen <br>
+         Treasure <br>
+         Junior </h5>
+      </div>
+      <div class="col s6 m4 center">
+         <img src="../static/images/luke.png">
+         <h5 class = "exec-content">Luke Guerdan <br>
+         President <br>
+         Sophomore </h5>
+      </div>
+      <div class="col s6 m4 center">
+         <img src="../static/images/will.png">
+         <h5 class = "exec-content">Will Morrison <br>
+         Vice President <br>
+         Junior </h5>
+      </div>
+   </div>
+   <div class="row center-align">
+      <div class="col s6 m4 center">
+         <img src="../static/images/christian.png">
+      <h5 class = "exec-content">Christian Cmehil-Warn <br>
+         Director of Communications <br>
+         Freshman </h5>
+      </div>
+      <div class="col s6 m4 center">
+         <img src="../static/images/reiker.png">
+         <h5 class = "exec-content">Reiker Seiffe <br>
+            SIG Director <br>
+            Sophomore </h5>
+      </div>
+      <div class="col s6 m4 center">
+         <img src="../static/images/holt.png">
+         <h5 class = "exec-content">Holt Skinner <br>
+            TigerHacks Director <br>
+            Junior</h5>
+      </div>
+   </div>
+</div>
 {% endblock %}
