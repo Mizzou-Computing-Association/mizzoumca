@@ -7,11 +7,11 @@ app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 updates = slack.notification_history()
 
-@app.route('/')
+@app.route('/landing')
 def landing_view():
    return render_template('landing.html')
 
-@app.route('/home')
+@app.route('/')
 def home():
    return render_template('home.html', updates=updates)
 

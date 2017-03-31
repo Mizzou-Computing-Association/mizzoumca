@@ -8,3 +8,5 @@ Flask-Stormpath==0.4.8
 Flask-WhooshAlchemy==0.56
 Flask-WTF==0.12
 slackclient==1.0.4
+livereload==2.5.1
+formic==0.9b8
