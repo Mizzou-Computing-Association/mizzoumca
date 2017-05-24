@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>MCA</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+   <meta charset="UTF-8">
+   <title>MCA</title>
 
-    <link rel="stylesheet" href="../static/style.css">
-      <link rel="stylesheet" href="../static/app-style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../static/style.css">
+   <link rel="stylesheet" href="../static/app-style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+   <script src="./static/script.js"></script>
+</head>
 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-      <script src = "./static/script.js"></script>
-
-
-      <link rel="shortcut icon" type="image/png" href="../favicon.png" />
-  </head>
-  <body>
-  <nav>
-    <div class="nav-wrapper" id = "cssnav">
-      <a href="#!" class="brand-logo center hide-on-large-only">MCA</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="left hide-on-med-and-down">
-        <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="{{ url_for('home') }}">Home</a></li>
-        <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="{{ url_for('sigs') }}">SIGs</a></li>
-        <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="{{ url_for('register') }}">Members</a></li>
-        <li><a class="waves-effect waves-yellow btn-flat nav-bttn" >Resources</a></li>
-      </ul>
-      <ul class ="right hide-on-med-and-down r-panel">
-         <li><a class="social-icon" href="https://twitter.com/mizzoumca" target="_"><img class = "social-img" src="static/images/Twitter.svg"></a></li>
-         <li><a class="social-icon" href="https://www.facebook.com/mizzouhackers/" target="_"><img class = "social-img" src="static/images/facebook.svg"></a></li>
-         <li><a class="social-icon" href="https://www.instagram.com/mizzoumca/" target="_"><img class = "social-img" src="static/images/instagram.svg" ></a></li>
-         <!-- <li><a class="nav-logo"><img class = "img-logo" src="static/images/mcalogo-notext.png"></a></li> -->
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a class = "side-nav-item" href="{{ url_for('home') }}">Home</a></li>
-        <li><a class = "side-nav-item" href="{{ url_for('sigs') }}">SIGs</a></li>
-        <li><a class = "side-nav-item" href="{{ url_for('register') }}">Members</a></li>
-        <li><a class = "side-nav-item">Resources</a></li>
-      </ul>
-    </div>
-  </nav>
-   {% block body %}
-
-   {% endblock%}
-   </body>
-   <footer class="page-footer">
+<body>
+   <nav>
+      <div class="nav-wrapper" id="cssnav">
+         <a href="#!" class="brand-logo center hide-on-large-only">MCA</a>
+         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         <ul class="left hide-on-med-and-down">
+            <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="{{ url_for('home') }}">Home</a></li>
+            <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="{{ url_for('sigs') }}">SIGs</a></li>
+            <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="{{ url_for('register') }}">Members</a></li>
+            <li><a class="waves-effect waves-yellow btn-flat nav-bttn">Resources</a></li>
+         </ul>
+         <ul class="right hide-on-med-and-down r-panel">
+            <li>
+               <a class="social-icon" href="https://twitter.com/mizzoumca" target="_"><img class="social-img" src="static/images/Twitter.svg"></a>
+            </li>
+            <li>
+               <a class="social-icon" href="https://www.facebook.com/mizzouhackers/" target="_"><img class="social-img" src="static/images/facebook.svg"></a>
+            </li>
+            <li>
+               <a class="social-icon" href="https://www.instagram.com/mizzoumca/" target="_"><img class="social-img" src="static/images/instagram.svg"></a>
+            </li>
+            <!-- <li><a class="nav-logo"><img class = "img-logo" src="static/images/mcalogo-notext.png"></a></li> -->
+         </ul>
+         <ul class="side-nav" id="mobile-demo">
+            <li><a class="side-nav-item" href="{{ url_for('home') }}">Home</a></li>
+            <li><a class="side-nav-item" href="{{ url_for('sigs') }}">SIGs</a></li>
+            <li><a class="side-nav-item" href="{{ url_for('register') }}">Members</a></li>
+            <li><a class="side-nav-item">Resources</a></li>
+         </ul>
+      </div>
+   </nav>
+   {% block body %} {% endblock%}
+</body>
+<footer class="page-footer">
+   <div class="row">
+      <div class="col m5 offset-m1 s12 footer-col">
          <div class="row">
-         <div class="col m5 offset-m1 s12 footer-col">
-              <div class="row">
-              <p class = "content ">Sign up for our mailing list to stay up to date on events and news:</p>
-                  <form class="col s12" method="GET">
-                     <div class="row email-input z-depth-1">
-                        <div class=" input-field col s12">
-                           <input id="email" type="email" class="validate">
-                           <label for="email" data-error="wrong" data-success="right">Email</label>
-                           <div class = "right-align">
-                           <button class="btn  red waves-effect waves-yellow" type="submit" name="action">Submit
-                              <i class="material-icons right">send</i>
-                           </button>
-                           </div>
-                        </div>
+            <p class="content ">Sign up for our mailing list to stay up to date on events and news:</p>
+            <form class="col s12" method="GET">
+               <div class="row email-input z-depth-1">
+                  <div class=" input-field col s12">
+                     <input id="email" type="email" class="validate">
+                     <label for="email" data-error="wrong" data-success="right">Email</label>
+                     <div class="right-align">
+                        <button class="btn  red waves-effect waves-yellow" type="submit" name="action">Submit
+                           <i class="material-icons right">send</i>
+                        </button>
                      </div>
-                  </form>
+                  </div>
                </div>
+            </form>
          </div>
-         <div class="col m5 offset-m1 s12">
-             <p class="grey-text text-lighten-4">Find other ways to get involved with Computer Science at MU</p>
-             <h5 class="white-text">Resources</h5>
-             <ul>
-               <li><a class="grey-text text-lighten-3" href="http://hackmizzou.com/" target="_">Hack Mizzou</a></li>
-               <li><a class="grey-text text-lighten-3" href="http://engineering.missouri.edu/cs/" target="_">MU Department of Computer Science</a></li>
-               <li><a class="grey-text text-lighten-3" href="http://engineering.missouri.edu/" target="_">MU Engineering</a></li>
-             </ul>
-            <ul id ="footersm">
-               <li><a class="social-icon" href="https://twitter.com/mizzoumca" target="_"><img class = "social-img" src="../static/images/Twitter.svg"></a></li>
-               <li><a class="social-icon" href="https://www.facebook.com/mizzouhackers/" target="_"><img class = "social-img" src="../static/images/facebook.svg"></a></li>
-               <li><a class="social-icon" href="https://www.instagram.com/mizzoumca/" target="_"><img class = "social-img" src="../static/images/instagram.svg" ></a></li>
-            </ul>
-           </div>
-         </div>
-       <div class="footer-copyright">
-         <div class="container">
+      </div>
+      <div class="col m5 offset-m1 s12">
+         <p class="grey-text text-lighten-4">Find other ways to get involved with Computer Science at MU</p>
+         <h5 class="white-text">Resources</h5>
+         <ul>
+            <li><a class="grey-text text-lighten-3" href="http://hackmizzou.com/" target="_">Hack Mizzou</a></li>
+            <li><a class="grey-text text-lighten-3" href="http://engineering.missouri.edu/cs/" target="_">MU Department of Computer Science</a></li>
+            <li><a class="grey-text text-lighten-3" href="http://engineering.missouri.edu/" target="_">MU Engineering</a></li>
+         </ul>
+         <ul id="footersm">
+            <li>
+               <a class="social-icon" href="https://twitter.com/mizzoumca" target="_"><img class="social-img" src="../static/images/Twitter.svg"></a>
+            </li>
+            <li>
+               <a class="social-icon" href="https://www.facebook.com/mizzouhackers/" target="_"><img class="social-img" src="../static/images/facebook.svg"></a>
+            </li>
+            <li>
+               <a class="social-icon" href="https://www.instagram.com/mizzoumca/" target="_"><img class="social-img" src="../static/images/instagram.svg"></a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <div class="footer-copyright">
+      <div class="container">
          © 2017 Mizzou Computing Association
-         </div>
-       </div>
-   </footer>
+      </div>
+   </div>
+</footer>
+
 </html>
-
-

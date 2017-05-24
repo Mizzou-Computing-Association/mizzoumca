@@ -30,7 +30,6 @@ def get_valid_messages(raw_messages):
    for message in raw_messages['messages']:
 
       if '<!channel>' in message['text']:
-         print message
          message["ts_day"] = time.strftime("%a %B %d, %Y", time.localtime(float(message['ts']))).replace(" 0", " ")
          message["ts_time"] = time.strftime("%I:%M %p", time.localtime(float(message['ts']))).replace(" 0", " ")
 
