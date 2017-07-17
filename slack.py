@@ -1,6 +1,6 @@
 from __future__ import with_statement
 from slackclient import SlackClient
-import os, time, json, requests
+import os, time, json, requests, re
 
 
 slack_token = os.environ.get('SLACK_TOKEN')
@@ -33,14 +33,44 @@ def get_valid_messages(raw_messages):
          message["ts_day"] = time.strftime("%a %B %d, %Y", time.localtime(float(message['ts']))).replace(" 0", " ")
          message["ts_time"] = time.strftime("%I:%M %p", time.localtime(float(message['ts']))).replace(" 0", " ")
 
-
          if len(post_messages) > 4:
             return post_messages
          else:
-            message['text'] = message['text'].rsplit('<!channel>')[1]
-            if message['text'][0] == ":":
-               print 'flag:' + message['text'][1:].split('<')[0]
-               message['text'] = message['text'][1:]
+            parse_message(message['text'])
+            message['text'] = parse_message(message['text'])
             post_messages.append(message)
 
    return post_messages
+
+def parse_message(message):
+   message = message.rsplit('<!channel>')[1]
+   new_message = []
+
+   if message[0] == ":":
+      message = message[1:]
+
+   for word in message.split(' '):
+      if "<http" in word:
+
+         new_word = word.split('//')[1]
+         if "|" in new_word:
+            new_word = new_word.split("|")[0]
+         new_word = new_word.split(">")[0]
+
+         link_word = "(<a href='" + new_word + "'>" + new_word +"</a>)"
+
+         if word[-1] == ",":
+            link_word += ","
+         new_message.append(link_word)
+
+      elif "<mailto" in word:
+         new_word = word.split('|')[1].split('>')[0]
+         new_message.append(new_word)
+
+      elif len(word) > 0 and word[0] == ":" and word[-1] == ":":
+         continue
+
+      else:
+         new_message.append(word)
+
+   return " ".join(new_message)

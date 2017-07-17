@@ -9,7 +9,7 @@
          <div class = "col s12 m6 ">
             <ul class="collection deep-orange lighten-4">
             {% for message in updates[channel] %}
-             <a href="#!" class = "collection-item">
+             <div class = "collection-item">
                <div><p class = "feed-content">{{ message['text']|safe }}</p></div>
                <div>
                   <div class = "row">
@@ -19,7 +19,7 @@
                      </div>
                   </div>
                </div>
-             </a>
+             </div>
              {% endfor %}
             </ul>
          </div>
