@@ -1,4 +1,3 @@
-
 h1 {
    font-weight: black;
 }
@@ -9,9 +8,8 @@ body {
    color: #F7F6EA!important;
 }
 
-
 a {
-   color: #ff0;
+   color: #ff0!important;
 }
 
 .cover {

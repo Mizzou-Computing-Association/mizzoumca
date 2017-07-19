@@ -11,7 +11,7 @@ body {
 }
 
 a{
-   color: #212227;
+   color: #212227!important;
 }
 
 .header{
@@ -41,6 +41,7 @@ a{
 
 .r-panel{
    height: 55px;
+   margin-right: 15px;
 }
 
 .card{
@@ -122,7 +123,7 @@ nav, #menu{
    height: 55px!important;
    line-height: 55px!important;
    background-color: #475B63!important;
-   font-family: 'Libre Franklin', sans-serif;
+   font-family: 'Libre Franklin', sans-serif;;
 }
 .content{
    font-size: 20px;

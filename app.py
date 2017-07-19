@@ -28,6 +28,10 @@ def register():
 def contact():
    return render_template('contact.html')
 
+@app.route('/spotlight')
+def spotlight():
+   return render_template('spotlight.html')
+
 if __name__ == '__main__':
 
     port = int(os.environ.get('PORT', 8080))
