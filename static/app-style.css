@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
-@import url('https://fonts.googleapis.com/css?family=Monoton|Raleway');
+/*@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');*/
+@import url('https://fonts.googleapis.com/css?family=Monoton|Raleway|Bungee|Libre+Franklin');
+/*@import url('https://fonts.googleapis.com/css?family=Bungee');*/
 body {
    background: #FFEA85;
    font-family: 'Raileway', sans-serif;
@@ -54,19 +55,56 @@ a{
 }
 
 .header-main{
-   margin-top: 3%;
-   color: #212227;
-   font-family: 'Libre Franklin', sans-serif!important;
+   margin-top: 5%;
+   margin-bottom: 2%!important;
+   color: #35363A;
+   font-family: 'Bungee', sans-serif!important;
    font-weight: 600;
 }
+.desc-lg{
+   width: 82%;
+}
+.desc-sm{
+   width: 95%;
+   margin: auto;
+}
 .desc-main{
-   font-weight: 400;
+   margin-top: 4%!important;
+   margin-bottom: 4%!important;
+   font-family: 'Raileway', sans-serif;
    font-size: 20px;
-   color: #212227;
+   color: #35363A;
+}
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #35363A; }
+}
+
+.i-header{
+   color: #35363A;
 }
 
 .info-item-header{
    font-family: 'Monoton', cursive;
+   color: #35363A;
 }
 #club-info{
    margin-top: 120px;
