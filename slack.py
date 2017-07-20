@@ -57,7 +57,7 @@ def parse_message(message):
             new_word = new_word.split("|")[0]
          new_word = new_word.split(">")[0]
 
-         link_word = "(<a href='" + new_word + "'>" + new_word +"</a>)"
+         link_word = "(<a target = '_' href='http://" + new_word + "'>" + new_word +"</a>)"
 
          if word[-1] == ",":
             link_word += ","

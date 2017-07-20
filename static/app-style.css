@@ -60,6 +60,8 @@ a{
    color: #35363A;
    font-family: 'Bungee', sans-serif!important;
    font-weight: 600;
+   width: 95%;
+   margin: auto;
 }
 .desc-lg{
    width: 82%;
