@@ -1,6 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');*/
 @import url('https://fonts.googleapis.com/css?family=Monoton|Raleway|Bungee|Libre+Franklin');
-/*@import url('https://fonts.googleapis.com/css?family=Bungee');*/
 body {
    background: #FFEA85;
    font-family: 'Raileway', sans-serif;
@@ -55,7 +53,7 @@ a{
 }
 
 .header-main{
-   margin-top: 5%;
+   margin-top: 5%!important;
    margin-bottom: 2%!important;
    color: #35363A;
    font-family: 'Bungee', sans-serif!important;
@@ -121,9 +119,8 @@ a{
 .exec-content{
    font-size: 20px;
    font-weight: 500;
-   color: #212121!important;
+   color: #212227!important;
    text-align: center;
-   border-style: solid black 1 px;
 }
 
 .card-title{
@@ -185,6 +182,7 @@ nav, #menu{
 }
 .content{
    font-size: 20px;
+   width: 90%;
 }
 .photo-main{
    margin-top: 2%;
@@ -246,8 +244,12 @@ ul#footersm li{
    display: inline;
 }
 
+.footer-text{
+   color: #E0E2E1!important;
+}
+
 footer.page-footer{
    background-color: #475B63!important;
-   font-family: 'Libre Franklin', sans-serif;
+   font-family: 'Raileway', sans-serif!important;
    margin-top: 0px!important;
 }
