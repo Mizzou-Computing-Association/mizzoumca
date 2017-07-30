@@ -234,12 +234,6 @@ nav, #menu{
    border: solid white 1px;
 }
 
-.email-input{
-   background-color: #F7F6EA;
-   padding: 5px;
-   border-radius: 10px;
-}
-
 ul#footersm li{
    display: inline;
 }
@@ -247,7 +241,28 @@ ul#footersm li{
 .footer-text{
    color: #E0E2E1!important;
 }
-
+#mc_embed_signup{
+   font-family: 'Raileway', sans-serif!important;
+   background-color: #D6D6D7;
+   margin-top: 5.5%!important;
+   border-radius: 15px;
+   color:#212227;
+   padding: 3%;
+}
+#mc-embedded-subscribe{
+   background-color: #FFCCBC!important;
+   color: #494A4E!important;
+   width: 20%!important;
+   border: solid 1px #494A4E!important;
+}
+.email-input{
+   color:#212227;
+   padding-left: 10px!important;
+   width: 90%!important;
+}
+.subscribe{
+   color:#212227;
+}
 footer.page-footer{
    background-color: #475B63!important;
    font-family: 'Raileway', sans-serif!important;
