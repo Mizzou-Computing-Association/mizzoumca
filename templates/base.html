@@ -32,7 +32,7 @@
             <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="{{ url_for('home') }}">Home</a></li>
             <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="{{ url_for('sigs') }}">SIGs</a></li>
             <li><a class="waves-effect waves-yellow btn-flat nav-bttn" href="{{ url_for('register') }}">Join</a></li>
-            <li><a class="waves-effect waves-yellow btn-flat nav-bttn">Resources</a></li>
+            <li><a class="waves-effect waves-yellow btn-flat nav-bttn modal-trigger" href="#resources">Resources</a></li>
          </ul>
          <ul class="right hide-on-med-and-down r-panel">
             <li>
@@ -50,10 +50,24 @@
             <li><a class="side-nav-item" href="{{ url_for('home') }}">Home</a></li>
             <li><a class="side-nav-item" href="{{ url_for('sigs') }}">SIGs</a></li>
             <li><a class="side-nav-item" href="{{ url_for('register') }}">Members</a></li>
-            <li><a class="side-nav-item">Resources</a></li>
+            <li><a class="side-nav-item modal-trigger" href="#resources">Resources</a></li>
          </ul>
       </div>
    </nav>
+     <!-- Modal Trigger -->
+
+
+     <!-- Modal Structure -->
+     <div id="resources" class="modal">
+       <div class="modal-content">
+         <h4 class = "modal-text">It's not a bug, it's a feature</h4>
+         <p class = "modal-text">We haven't created a home for our resources section yet. Want to tackle a new project? Clone this repository from <a target="_" href="https://github.com/lguerdan/mizzoumca">here</a>, follow the configuration instructions, and add your own twist to this page! If you have questions or need help, reach out to any exec member or email us.</p>
+       </div>
+       <div class="modal-footer">
+         <a href="#!" class="resources-btn modal-action modal-close waves-effect waves-green btn-flat">Sounds Good</a>
+       </div>
+     </div>
+
    {% block body %} {% endblock%}
 </body>
 <footer class="page-footer">

@@ -61,6 +61,13 @@ a{
    width: 95%;
    margin: auto;
 }
+.modal-text{
+   color: #494A4E;
+}
+.resources-btn{
+   background-color: #b2ebf2;
+   color: #494A4E;
+}
 .desc-lg{
    width: 82%;
 }
