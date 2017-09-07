@@ -9,7 +9,7 @@ if slack_token == None:
    exit()
 
 slack_client = SlackClient(slack_token)
-channels = {"general": "C0K2AGL7Q" ,  "sig-game-dev_vr": "C0KC84SHM", "sig-swift": "C0KMQ3CKV", "sig-web-dev": "C0KMU20RE", "algorithm-fight-club": "C0KJGKZ6Y"}
+channels = {"general": "C0K2AGL7Q" ,"Machine Learning SIG": "C6XLFD4B1", "Cyber Security SIG": "C0L3ASEBS", "Swift SIG": "C0KMQ3CKV","Interview Prep SIG": "C6SAVCQ9X", "Game Dev SIG": "C0KC84SHM", "Algorithm Fight Club": "C0KJGKZ6Y", "C.O.D.E SIG": "C6VQX5FPD", "Android SIG": "C281ZR50D"}
 
 def notification_history():
    updates = {}
@@ -27,8 +27,6 @@ def notification_history():
 # Scope to channel mentions and limit to most recent 4 posts
 def get_valid_messages(raw_messages):
    post_messages = []
-   print raw_messages['messages']
-   print '\n\n'
    for message in raw_messages['messages']:
 
       if '<!channel>' in message['text']:
