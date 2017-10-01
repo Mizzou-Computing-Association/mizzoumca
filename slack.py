@@ -46,7 +46,7 @@ def parse_message(message):
    message = message.rsplit('<!channel>')[1]
    new_message = []
 
-   if message[0] == ":":
+   if len(message) and message[0] == ":":
       message = message[1:]
 
    for word in message.split(' '):
