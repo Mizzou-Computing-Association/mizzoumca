@@ -9,7 +9,7 @@ if slack_token == None:
    exit()
 
 slack_client = SlackClient(slack_token)
-channels = {"general": "C0K2AGL7Q" , "Cyber Security SIG": "C0L3ASEBS", "Swift SIG": "C0KMQ3CKV","Interview Prep SIG": "C6SAVCQ9X", "Algorithm Fight Club": "C0KJGKZ6Y", "Android SIG": "C281ZR50D", "Git SIG": "C8TU7TMDW", "Intro to Programming Concepts SIG": "C8WPNTX9S", "UX Design SIG": "C0KTDMVEV"}
+channels = {"general": "C0K2AGL7Q" , "Cyber Security SIG": "C0L3ASEBS", "Game Dev SIG": "C0KC84SHM", "Web Dev SIG": "C0KMU20RE", "Swift SIG": "C0KMQ3CKV","Interview Prep SIG": "C6SAVCQ9X", "Algorithm Fight Club": "C0KJGKZ6Y", "Android SIG": "C281ZR50D", "Git SIG": "C8TU7TMDW", "Intro to Programming Concepts SIG": "C8WPNTX9S", "UX Design SIG": "C0KTDMVEV"}
 
 def notification_history():
    updates = {}
