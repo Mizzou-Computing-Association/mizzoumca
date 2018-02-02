@@ -9,7 +9,34 @@ if slack_token == None:
    exit()
 
 slack_client = SlackClient(slack_token)
-channels = {"general": "C0K2AGL7Q" , "Cyber Security SIG": "C0L3ASEBS", "Game Dev SIG": "C0KC84SHM", "Web Dev SIG": "C0KMU20RE", "Swift SIG": "C0KMQ3CKV","Interview Prep SIG": "C6SAVCQ9X", "Algorithm Fight Club": "C0KJGKZ6Y", "Android SIG": "C281ZR50D", "Git SIG": "C8TU7TMDW", "Intro to Programming Concepts SIG": "C8WPNTX9S", "UX Design SIG": "C0KTDMVEV"}
+
+siginfo = [
+	["Android", "TBD", "TBD"],
+	["Algorithm Fight Club", "Thursday 7-8pm", "Lafferre C2205"],
+	["Cyber Security", "Mondays 5-6pm", "Naka 222"],
+	["Game Dev", "Tuesdays 7-8pm", "Lafferre C1205"],
+	["Git", "Tuesdays 5-6pm", "Naka 222"],
+	["Interview Prep", "Tuesdays 6-7pm", "Naka 222"],
+	["Intro to Programming Concepts", "Mondays 6-7pm", "Lafferre C1205"],
+	["Machine Learning", "Tuesdays 8-9pm", "TBD"],
+	["Swift", "Thursdays 5-6pm", "RJI Building 042"],
+	["UX Design", "Wednesdays 5-6pm", "Naka 222"],
+	["Web Dev", "Wednesdays 7-8pm", "RJI Building 042"]
+]
+channels = {
+	"general": "C0K2AGL7Q",
+	"Cyber Security SIG": "C0L3ASEBS",
+	"Machine Learning SIG":"C6XLFD4B1",
+	"Game Dev SIG": "C0KC84SHM",
+	"Web Dev SIG": "C0KMU20RE",
+	"Swift SIG": "C0KMQ3CKV",
+	"Interview Prep SIG": "C6SAVCQ9X",
+	"Algorithm Fight Club": "C0KJGKZ6Y",
+	"Android SIG": "C281ZR50D",
+	"Git SIG": "C8TU7TMDW",
+	"Intro to Programming Concepts SIG": "C8WPNTX9S",
+	"UX Design SIG": "C0KTDMVEV"
+}
 
 def notification_history():
    updates = {}

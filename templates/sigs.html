@@ -1,5 +1,22 @@
 {% extends "base.html" %}
 {% block body %}
+  
+  <center>
+  <h6 id="header2" class="schedule" class="container z-depth-1">
+      <table>
+        <th><u>SIG</u></th>
+        <th><u>Date and Time</u></th>
+        <th><u>Place</u></th>
+        {% for data in siginfo %}
+          <tr>
+            <td>{{data[0]}}</td>
+            <td>{{data[1]}}</td>
+            <td>{{data[2]}}</td>
+          </tr>
+        {% endfor %}
+      </table>
+  </h6>
+</center>
 
    {% for channel, messages in updates.iteritems() %}
       <div class="container">

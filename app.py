@@ -18,7 +18,7 @@ def home():
 def sigs():
    r = dict(updates)
    del r['general']
-   return render_template('sigs.html', updates=r)
+   return render_template('sigs.html', updates=r, siginfo=slack.siginfo)
 
 @app.route('/register')
 def register():
