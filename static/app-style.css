@@ -294,7 +294,8 @@ footer.page-footer{
 }
 
 .schedule table tr td{
-   padding: 0;
+   padding: 3px;
+   border-radius: 0px;
 }
 
 .schedule table tr:nth-child(even) {
