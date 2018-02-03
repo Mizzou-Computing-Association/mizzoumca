@@ -10,8 +10,9 @@ if slack_token == None:
 
 slack_client = SlackClient(slack_token)
 
+# used to populate the table of contents on /sigs
 siginfo = [
-	["Android", "TBD", "TBD"],
+	["Android", "Fridays 5-6pm", "Naka 222"],
 	["Algorithm Fight Club", "Thursday 7-8pm", "Lafferre C2205"],
 	["Cyber Security", "Mondays 5-6pm", "Naka 222"],
 	["Game Dev", "Tuesdays 7-8pm", "Lafferre C1205"],
@@ -23,6 +24,8 @@ siginfo = [
 	["UX Design", "Wednesdays 5-6pm", "Naka 222"],
 	["Web Dev", "Wednesdays 7-8pm", "RJI Building 042"]
 ]
+
+# used to generate a section for each SIG's message posts on /sigs
 channels = {
 	"general": "C0K2AGL7Q",
 	"Cyber Security SIG": "C0L3ASEBS",
