@@ -12,14 +12,14 @@ slack_client = SlackClient(slack_token)
 
 # used to populate the table of contents on /sigs
 siginfo = [
-	["Android", "Fridays 5-6pm", "Naka 222"],
+	["Android", "Mondays 7-8pm", "Naka 222"],
 	["Algorithm Fight Club", "Thursday 7-8pm", "Lafferre C2205"],
 	["Cyber Security", "Mondays 5-6pm", "Naka 222"],
 	["Game Dev", "Tuesdays 7-8pm", "Lafferre C1205"],
 	["Git", "Tuesdays 5-6pm", "Naka 222"],
 	["Interview Prep", "Tuesdays 6-7pm", "Naka 222"],
 	["Intro to Programming Concepts", "Mondays 6-7pm", "Lafferre C1205"],
-	["Machine Learning", "Tuesdays 8-9pm", "TBD"],
+	["Machine Learning", "Tuesdays 8-9pm", "Naka 116"],
 	["Swift", "Thursdays 5-6pm", "RJI Building 042"],
 	["UX Design", "Wednesdays 5-6pm", "Naka 222"],
 	["Web Dev", "Wednesdays 7-8pm", "RJI Building 042"]
