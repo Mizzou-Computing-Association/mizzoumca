@@ -4,7 +4,7 @@
 <svg version="1.1" id="Twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
 <g>
-	<circle id="twitter-back" fill="#929292" cx="64" cy="64" r="64"/>
+	<circle id="twitter-back" fill="#086788" cx="64" cy="64" r="64"/>
 	<path id="twitter-twitter" fill="#FFFFFF" d="M99.8398,41.7695c-2.6367,1.17-5.4707,1.96-8.4462,2.3155
 		c3.0351-1.8204,5.3681-4.7022,6.4658-8.1363c-2.8408,1.6851-5.9883,2.9097-9.3379,3.5689
 		c-2.6826-2.8584-6.5049-4.6436-10.7344-4.6436c-8.123,0-14.7065,6.584-14.7065,14.7051c0,1.1533,0.1303,2.2754,0.3808,3.3516

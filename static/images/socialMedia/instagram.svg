@@ -4,7 +4,7 @@
 <svg version="1.1" id="Instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
 <g>
-	<circle id="instagram-back" fill="#929292" cx="64" cy="64" r="64"/>
+	<circle id="instagram-back" fill="#086788" cx="64" cy="64" r="64"/>
 	<path id="instagram-instagram" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M91.5713,58.4829h-6.2402
 		c0.4541,1.7651,0.7236,3.6089,0.7236,5.5156c0,12.1831-9.875,22.0562-22.0552,22.0562c-12.1797,0-22.0542-9.8731-22.0542-22.0562
 		c0-1.9067,0.2695-3.7505,0.7246-5.5156h-6.2407v30.3286c0,1.5205,1.2349,2.7549,2.7598,2.7549h49.6215
